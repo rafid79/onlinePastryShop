@@ -7,7 +7,7 @@ import { useStateValue } from './../../Model/context/StateProvider';
 import { categories } from "../../Controllers/utils/Data";
 
 const MenuContainer = () => {
-  const [filter, setFilter] = useState("chicken");
+  const [filter, setFilter] = useState("slicecakes");
 
   const [{ foodItems }, dispatch] = useStateValue();
 
@@ -18,7 +18,7 @@ const MenuContainer = () => {
           Our Mouth Watery Items
         </p>
 
-        <div className="w-full flex items-center justify-start lg:justify-center gap-8 py-6 overflow-x-scroll scrollbar-none">
+        <div className="w-full flex items-center text-center text-2xl font-medium justify-start lg:justify-center gap-8 py-6 overflow-x-scroll scrollbar-none">
           {categories &&
             categories.map((category) => (
               <motion.div
